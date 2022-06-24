@@ -2,7 +2,6 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-image: url();
     background-color: #90E0EF;
     text-align: center;
@@ -16,36 +15,39 @@ h1 {
 }
 
 #logo {
-    font-size: 30px;
+    font-size: xx-large;
+    font-weight: 900;
 }
 
 ul a,span {
     color: white;
 }
 
-a:hover {
-    background-color: #000;
-}
 
 .navbar {
     background-color: #383838;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     /* position: relative; */
 }
-
-.nav-list {
-    float: right;
-    margin: 0 0;
-    top: 0;
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
 }
 
-.nav-item {
-    float: left;
-    list-style-type: none;
-    padding: 10px;
+.navbar ul li{
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
-
+.navbar ul li a:hover{
+    text-decoration: underline;
+}
 .intro-container, .skills-container, #footer {
-    width: 80%;
     margin: 0 auto;
 }
 
